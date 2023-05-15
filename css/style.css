@@ -1,0 +1,286 @@
+
+body{
+    padding: 2rem 6rem 2rem 6rem;
+    background-color: rgb(69, 10, 3);
+}
+
+*{
+    color:white;
+}
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: 1px solid gray;
+    font-size: 1.8rem;
+    color: beige;
+    text-align: center;
+    text-transform: capitalize;
+    transition: .2s linear;
+    margin-top: 1rem;
+}
+
+.navbar{
+  background: bisque;
+  margin-bottom: 1rem;
+}
+
+
+.availability form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.availability form .flex .box{
+    flex: 1 1 5rem;
+}
+
+.availability form .flex .box p{
+    font-size: 1.5rem;
+    color: bisque;
+    margin-top: 2rem;
+
+}
+
+
+
+.availability form .flex .box .input{
+    width: 100%;
+    padding: 1rem 0.2rem;
+    font-size: 1rem;
+    background-color: rgb(69, 10, 3);
+    color:white;
+    border-bottom: 1px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+ 
+}
+
+.availability form .flex .box .input[type="date"]::-webkit-calendar-picker-indicator{
+   filter:invert(1);
+}
+
+
+/* about css */
+
+
+.about .row{
+  margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+    
+ }
+ 
+ .about .row .image{
+    flex: 1 1 40rem;
+ }
+ 
+ .about .row .image img{
+    width: 20rem;
+    height: 30rem;
+    border-radius: .5rem;
+ }
+ 
+ .about .row .content{
+    flex:1 1 40rem;
+ }
+ 
+ .about .row .content h3{
+    font-size: 3rem;
+    color:white;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+ }
+ 
+ .about .row .content p{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color:white;
+ }
+ 
+ .about .row.revers{
+    flex-flow: row-reverse;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+
+ }
+
+
+ /* services section css */
+
+ .services .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap: 1rem;
+   justify-content: center;
+   align-items: flex-start;
+ }
+ 
+ .services .box-container .box{
+   padding: 2rem;
+   text-align: center;
+ }
+
+ .services .box-container .box img{
+   height: 5rem;
+   margin-bottom: 1rem;
+ }
+
+ .services .box-container .box h3{
+   font-size: 1.7rem;
+   color: bisque;
+   text-transform: capitalize;
+   margin: 1rem 0;
+ }
+
+ .services .box-container .box p{
+   line-height: 2;
+   font-size: 1rem;
+   color: bisque;
+ }
+
+ /* reservation css */
+
+ .reservation form{
+   border: 1px solid bisque;
+   padding:1.5rem;
+ }
+
+ .reservation form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+
+ }
+
+ .reservation form h3{
+   background-color: bisque;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   border-radius: .5rem;
+   padding: 1rem;
+   text-align: center;
+   text-transform: capitalize;
+ }
+
+ .reservation form .flex .box{
+   flex: 1 1 30rem;  
+   
+ }
+
+ .reservation form .flex .box p{
+   font-size: 1.4rem;
+   color: bisque;
+ }
+
+ .reservation form .flex .box .input{
+  
+   border-bottom: 1px solid white;
+   background-color: rgb(69, 10, 3) ;
+   font-size: 1.5rem;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   width: 100%;
+ }
+
+ .reservation form .flex .box .input[type="date"]::-webkit-calendar-picker-indicator{
+   filter:invert(1);
+}
+
+/* accordion css */
+
+.accordion{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: bisque;
+  color: rgb(69, 10, 3);
+}
+
+.accordion-item{
+  background-color: rgb(69, 10, 3);
+  color: white;
+}
+
+.accordion-button{
+  background-color: bisque;
+  color: white;
+  border: 2px solid white;
+}
+
+
+.accordion-button {
+  background: bisque;
+  border: 1px solid white;
+}
+
+.accordion-button:active{
+    background:bisque;
+    border: 1px solid white;
+}
+
+.accordion-button:focus{
+    background:bisque;
+    border: 1px solid white;
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 3rem;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.4rem;
+  color: bisque;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+  color: white;
+}
+
+.footer .box-container .box:first-child i{
+  margin-right: 1.7rem;
+}
+
+.footer .box-container .box:nth-child(2){
+  text-align: center;
+}
+
+.footer .box-container .box:last-child{
+  text-align:right;
+}
+
+.footer .box-container .box:last-child i{
+  margin-left: 1.4rem;
+}
+
+.footer .credit{
+  border-radius: .5rem;
+  padding: 2rem;
+  text-align: center;
+  color:  rgb(69, 10, 3);
+  background-color: bisque;
+  font-size: 2rem;
+  /* margin-bottom: 8rem; */
+}
+
+
+
+
+
+
+
+
+
